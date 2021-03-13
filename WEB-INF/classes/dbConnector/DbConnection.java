@@ -26,7 +26,7 @@ public static Connection getConnection()
 		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/callcenter", "root", "");
 		return con;
 	} catch (Exception e) {
-		// TODO: handle exception
+		// handle exception
 		System.out.println("Exception is " + e);
 
 	}
