@@ -1,0 +1,70 @@
+%My Title Page
+\documentclass[12pt]{report}
+\begin{titlepage}
+\ifthenelse{\equal{\statustitle}{Mr.}}
+{
+	\def \person {his}
+}
+{
+	\ifthenelse{\equal{\statustitle}{Mr}}
+	{
+		\def \person {his}
+	}
+	{
+		\ifthenelse{\equal{\statustitle}{mr}}
+		{
+			\def \person {his}
+		}
+		{
+			\ifthenelse{\equal{\statustitle}{mr.}}
+			{
+				\def \person {his}
+			}
+			{
+				\def \person {her}
+			}
+		}
+	}
+}
+
+
+%-------------------------------------------------------------------------
+%For page border
+%----------------------------------------------------
+\thisfancypage{%
+  \setlength{\fboxrule}{1pt}\doublebox}{}
+
+\begin{center}
+%----------------------------------------------------
+\begin{minipage}[c]{0.18\textwidth}
+\includegraphics[width=\linewidth]{aissms}%
+\end{minipage}
+%----------------------------------------------------
+\begin{minipage}[c]{0.80\textwidth}
+\centering
+\Large{\textbf{Department of Computer Engineering\\ \insti, Pune \mbox{} 
+}}
+\\
+\end{minipage}
+\noindent\rule{15cm}{0.6pt}}
+%----------------------------------------------------
+\\ \mbox{} \\ \mbox{} %\\ \mbox{} \\ \mbox{} \\
+\Large{\textbf{\uppercase{certificate}}}
+\\ \mbox{} %\\ \mbox{} \\
+\end{center}
+%----------------------------------------------------
+\begin{adjustwidth}{0.40in}{0.40in}
+\setstretch{2}
+
+\large{\textit{\hspace{0.5 in}This is to certify that \textbf{\nameoncerti}  of \textbf{Third Year} \textbf{{\Specialisation}} \textbf{Engineering} has successfully completed his / her seminar work titled \textbf{\thesistitle}} at AISSMS’s Institute of Information Technology ,Pune in the partial fulfillment of the Bachelors Degree in Engineering.\\  }\\ \\
+\normalsize{Date: }\scriptsize{...................................}\\\\ 
+\normalsize{..............................................}\\
+\normalsize{\hspace{0.5 in}\guidename\\ Seminar Guide}\\ \\
+\normalsize{..............................................} \hspace{1.6 in}{ }{ } \normalsize{..............................................}\\
+\normalsize{\depthead \hspace{3.1 in} Dr.P.B.Mane}\\
+\normalsize{HOD,Computer Engineering \hspace{2.6 in} Principal}
+%Examination: \\
+%\normalsize{Examiner 1:\normalsize{..............................1..........................................}}\\ \\
+%\normalsize{Examiner 2:\normalsize{........................................................................}}\\
+\end{adjustwidth}
+\end{titlepage}

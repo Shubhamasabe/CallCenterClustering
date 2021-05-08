@@ -1,0 +1,79 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[font=footnotesize,labelfont=bf,format=hang,justification=raggedright]{caption}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{fancybox}
+%\usepackage{dotseqn}
+\usepackage{eso-pic}
+\usepackage{longtable}
+\usepackage[nottoc]{tocbibind}
+\usepackage[toc,page]{appendix}
+\usepackage{pdfpages}
+
+\renewcommand{\baselinestretch}{1.2}
+\setlength{\textheight}{9.2in}
+\setlength{\textwidth}{6.1in}
+\addtolength{\leftmargin}{-.3in}
+\topmargin -.2in
+\linespread{1.5}
+
+\begin{document}
+\include{Title}
+\pagenumbering{roman}
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{Certificate}
+\include{certificate}
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{Sponsership Certificate}
+\include{spon_cert1}
+%\include{certfct}
+\addcontentsline{toc}{section}{Acknowledgement}
+\include{Acknlg}
+%\addcontentsline{toc}{section}{List of Publications}
+%\include{LOP}
+\addcontentsline{toc}{section}{Abstract}
+\include{Abstract}
+\addcontentsline{toc}{section}{Contents}
+\tableofcontents
+\newpage
+%\addcontentsline{toc}{section}{List of Figures}
+\listoffigures
+\listoftables
+\newpage
+\addcontentsline{toc}{section}{Abbreviations}
+\include{abbr}
+
+
+\pagestyle{fancy}
+\fancyhead[RO]{\footnotesize{\textit{Project Title}}}
+%\fancyhead[LO]{\footnotesize{\textit{BE Project Report 2019-20}}}
+\renewcommand{\footrulewidth}{0.5pt}
+\fancyfoot[RO]{\footnotesize{\textit{Deptartment of Computer Engg.}}}
+\fancyfoot[LO]{\footnotesize{\textit{ICEM, Pune.}}}
+
+\pagenumbering{arabic}
+\include{S1_Intro}
+\include{S2_RW}
+\include{S3_SRS}
+\include{S4_SD}
+\include{S5_Plan}
+\include{S6_Implementation}
+\include{S7_Testing}
+\include{S8_Results}
+\include{S9_Conclusion}
+
+\bibliographystyle{ieeetr}
+\scriptsize
+\bibliography{incBB}
+\normalsize
+
+\include{apndx1}
+
+\end{document}
