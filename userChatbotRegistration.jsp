@@ -198,15 +198,10 @@
 						<td></td>
 						
 						<td style="height: auto;width: auto;border: 1px solid;border-radius: 10px;background: #82e0aa;"><label style="color: white"> <%=answer %> </label>
-						<%
-						if(!answer.equals("Chatbot : No Medicine Availble"))
-						{
-						} %>
-						
 						</td>
 					    </tr>
 						<%
-						System.out.println(answer);
+						//System.out.println(answer);
                          }
                         %>
 						</thead>

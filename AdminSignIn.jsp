@@ -52,7 +52,7 @@ if(Result.equals("failed"))
             <div class="row" style="padding:1%;">
             <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
-            <form action="AdminSigninServlet" method="post" name="ureg">
+            <form action="AdminLogin" method="post" name="ureg">
             <div class="pageform">
             <label style="color: #0084b4;text-align: center;margin-bottom: 7%">Admin Login</label><br>
             <label>User Name</label><br>
