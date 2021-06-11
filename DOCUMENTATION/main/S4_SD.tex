@@ -13,7 +13,7 @@
 \paragraph{}The architecture of the proposed system is shown in figure \ref{fig:block_diagram}. It has four modules explained as follows:
 \begin{figure}[!h]
 \begin{center}
-\fbox{\includegraphics[width=1.01\linewidth]{./arch}}
+\fbox\{includegraphics[width=1.01\linewidth]{./arch}}
 \caption{System Architecure}
 \label{fig:block_diagram}
 \end{center}
@@ -82,10 +82,10 @@
 \paragraph{DFD Level 0: }This is called fundamental level DFD for proposed system. It represents the entire system element as a single bubble with inputs and outputs. Input is the query submitted by user and output is nothing but the suggested queries. Figure \ref{fig:DFD0} is the Level 0 DFD for the system.\\
 \begin{figure}[!h]
 	\centering
-	{\includegraphics[width=0.725\linewidth]{./dfd0}
+	\includegraphics[width=0.725\linewidth]{./dfd0}
 		\caption[Level 0 DFD]{Level 0 DFD}
 		\label{fig:DFD0}
-	\end{figure}
+\end{figure}
 
 
 
@@ -99,7 +99,7 @@
 \paragraph{DFD Level 2: }This is called as Advanced level DFD for proposed system. It represents systems entire process activities and inputs, outputs in DFD Level 0 will remain same for DFD level 2. The DRec algorithm will accept user query, perform all required operations and returns final suggestions to the user. It consists of user validation, Data extractor, Graph generator, Heat diffusion model and last is the heat value calculation by the random jump. The user is validated, then the user enters a query, using the given query data is extracted from the database, and using a graph generator Query-URL bipartite graph is generated, after applying heat diffusion on it, heat values are calculated by random jump, and those queries having the highest value of heat are suggested to the user. Figure \ref{fig:DFD2} is the Level 2 DFD of the system.
 \begin{figure}[!h]
 	\centering
-	{\includegraphics[scale=.725]{./dfd2}
+	\includegraphics[scale=.725]{./dfd2}
 	\caption{Level 2 DFD}
 	\label{fig:DFD2}
 \end{figure}
@@ -111,7 +111,7 @@ SysML or as contractual statements. A use case diagram represents all different 
 \vspace{.25in}
 \begin{figure}[!h]
 \centering
-{\includegraphics[width=.85\linewidth]{./usecase}
+\includegraphics[width=.85\linewidth]{./usecase}
 \caption{Use case Diagram}
 \label{fig:Usecase}
 \end{figure}
@@ -120,7 +120,7 @@ SysML or as contractual statements. A use case diagram represents all different 
 \paragraph{}Class diagram describes the structure of a system by showing the system's classes, their attributes, and the relationships among the classes. Proposed system contains seven different types of classes and each posses their own attributes and methods. Main Classes of the proposed system are RandomJump, DBconnection, DFS, Bipartitegraph and HDModel each have different functionalities. Class diagram for proposed system is in figure \ref{fig:Class}.
 \begin{figure}[!h]
 \centering
-{\includegraphics[width=1.0\linewidth]{./Class}
+\includegraphics[width=1.0\linewidth]{./Class}
 \caption[Class Diagram]{Class Diagram}
 \label{fig:Class}
 \end{figure}
@@ -129,7 +129,7 @@ SysML or as contractual statements. A use case diagram represents all different 
 \paragraph{}An activity is particular operation of the system. An activity diagram is intended to represent stepwise work-flow of activities or actions that can take place in the system. It shows overall flow of control and models computational and organizational processes. Activity diagrams are used to model dynamic aspects of the system. Activity diagram for the system is shown in figure \ref{fig:Activity}.
 \begin{figure}[!h]
 \centering
-{\includegraphics[width=1.1\linewidth]{./act}
+\includegraphics[width=1.1\linewidth]{./act}
 \caption{Activity Diagram}
 \label{fig:Activity}
 \end{figure}
@@ -159,7 +159,7 @@ SysML or as contractual statements. A use case diagram represents all different 
 \vspace{.25in}
 \begin{figure}[h!]
 \centering
-{\includegraphics[width=.95\linewidth]{./comp}
+\includegraphics[width=.95\linewidth]{./comp}
 \caption{Component Diagram}
 \label{fig:Component}
 \end{figure}

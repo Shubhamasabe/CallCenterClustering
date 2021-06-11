@@ -42,9 +42,8 @@ public class SignInServlet extends HttpServlet {
 				
 				System.out.println("OTP is "+otp);
 				
-			
 				SendSMS sms=new SendSMS();
-				//sms.callURL("Your OTP is " + otp + " for Call Center Voice Clustering",mobile);
+				sms.callURL("Your OTP is " + otp + " for Call Center Voice Clustering",mobile);
 				
 				response.sendRedirect("UserVerifyOtpSignIn.jsp?Result=");
 			

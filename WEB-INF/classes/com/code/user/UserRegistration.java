@@ -36,7 +36,7 @@ public class UserRegistration extends HttpServlet {
 			
 		
 			SendSMS sms=new SendSMS();
-			//sms.callURL("Your OTP is " + otp + " for Call Center Voice Clustering",mobile);
+			sms.callURL("Your OTP is " + otp + " for Call Center Voice Clustering",mobile);
 			
 			response.sendRedirect("UserVerifyOtp.jsp?Result=");
 		
