@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Ant-Version: Apache Ant 1.7.0
-Created-By: 1.4.2_16-b05 (Sun Microsystems Inc.)
-Built-By: ds01191
-Main-Class: com.sun.speech.freetts.FreeTTS
-
-Name: common
-Implementation-Title: FreeTTS core library
-
