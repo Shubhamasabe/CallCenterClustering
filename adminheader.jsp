@@ -54,23 +54,7 @@ Integer id=(Integer)session.getAttribute("id");
 			<div class="main_menu_area" style="margin-top: 10px">
 				<ul id="nav">
 					<li><a href="AdminHome.jsp?Result=">Home</a></li>
-					<%
-					DbConnection dbConnection=new DbConnection();
-					ResultSet rs=dbConnection.selectOperation("SELECT * FROM `newquestion` WHERE status ='Waiting'");
-					if(rs.next())
-					{
-					%>
-					<li><a href="NewQuestion.jsp?Result="><blink>New Question</blink></a></li>
-					<%
-					}
-					else
-					{
-					%>
-					
-					<%
-					}
-					%>
-					<li><a href="Addquestion.jsp?Result=">Add Question</a></li>
+					<li><a href="adminViewRequest.jsp">View Request</a></li>
 					<li><a href="./Logout?Result=admin">Logout</a></li>
                 </ul>
             </div>

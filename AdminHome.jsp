@@ -25,43 +25,19 @@
 </head>
 <body>
 	<jsp:include page="adminheader.jsp"></jsp:include>
-	<%
-String Result=request.getParameter("Result");
-
-%>
 	<div class="body_wrapper">
 		<div class="center">
-
 			<div class="container">
 				<div class="row" style="padding: 1%;">
 					<div class="col-sm-12 col-md-12 col-lg-12">
 						<div
 							class="col-xs-12 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10">
 							<br>
-							
-		 
-		  <form action="./UploadNotices" method="post">
-		  <div class="pageform">
-		  <div class="table-responsive" >          
-                        <table class="table " style="width: 100%;margin: 0;border: 1px solid #fff;color: #82e0aa;font-size: 15px">
-                        <thead>
-                        <tr>
-						<td> <h3 style="color: #0084b4;text-align: center;margin-bottom: 7%">Notice: </h3></td><td><textarea rows="6" cols="50" name="notice"></textarea></td>
-						</tr>
-						
-		   </thead>
-		   </table>
-		   </div>
-		   
-			<input type="submit" style="width: auto;padding: 2%" value="Upload Notice">
-		  </div>
-		  </form>				
-		 
- 		 </div>
-         </div>
-		 </div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-	</div>
 	</div>
 
 
